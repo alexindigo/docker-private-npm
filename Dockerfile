@@ -8,7 +8,7 @@ RUN npm install -g kappa
 # Proxy config
 RUN echo '\
 {\n\
-  "servers": [{"host": "localhost", "port": 80}],\n\
+  "servers": [{"port": 80}],\n\
   "plugins": {\n\
     "kappa": {\n\
       "vhost": "localhost",\n\
