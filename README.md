@@ -9,4 +9,4 @@ Private NPM registry container based on Kappa – a hierarchical npm-registry pr
 
 Or run manually with custom config
 
-`docker run -t -i -p 80:80 -v $(pwd):/www alexindigo/private-npm /etc/init.d/couchdb start && kappa -c /www/my_custom_config.json`
+`docker run -t -i -p 80:80 -v $(pwd):/www alexindigo/private-npm sh -c '/etc/init.d/couchdb start && kappa -c /www/my_custom_config.json'`
