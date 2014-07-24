@@ -4,8 +4,8 @@ REGISTRY="http://${COUCHDB_PORT_5984_TCP_ADDR}:${COUCHDB_PORT_5984_TCP_PORT}/reg
 # make config up to date
 if [ -f "/www/kappa.json" ]
 then
-  sed -i'' 's%REGISTRY%'${REGISTRY}'%' /www/kappa.json
+  sed 's%REGISTRY%'${REGISTRY}'%' /www/kappa.json > /www/private_npm.json
 fi
 
 # Start kappa
-kappa -c /www/kappa.json
+kappa -c /www/private_npm.json
