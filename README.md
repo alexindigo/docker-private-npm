@@ -1,7 +1,7 @@
 docker-private-npm
 ==================
 
-Private NPM registry container based on [Kappa](https://github.com/krakenjs/kappa) – a hierarchical npm-registry proxy
+Private NPM registry container based on [Kappa](https://github.com/krakenjs/kappa) – a hierarchical npm-registry proxy.
 
 NPM registry couchapp container, using couchdb `1.6.0`, node `0.10.29` and npm-registry `2.4.3`.
 
@@ -14,6 +14,12 @@ Init npm-registry couchapp:
 
 ```
 $ ./run.sh /opt/npmjs/couchdb_init.sh
+```
+
+Restart couchdb container
+
+```
+$ docker restart couchdb
 ```
 
 ## Run
