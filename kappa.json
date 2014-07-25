@@ -20,7 +20,8 @@
       [
         "REGISTRY/_design/app/_rewrite/",
         "https://registry.npmjs.org/"
-      ]
+      ],
+      "logLevel": "info"
     }
   }
 }
